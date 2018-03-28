@@ -236,6 +236,7 @@ class FRLocalFlavorTests(SimpleTestCase):
             '869067543002289': '869067543002289',
             # Good Overseas
             '869069713002256': '869069713002256',
+            '869069813002229': '869069813002229',
             # Good, old Corsica department number (20) with birthdate < 1976
             '870062009002285': '870062009002285',
             # Good, new Corsica department number (2A) with birthdate >= 1976
