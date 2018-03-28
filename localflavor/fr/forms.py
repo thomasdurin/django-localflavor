@@ -154,10 +154,6 @@ class FRNationalIdentificationNumber(CharField):
             raise ValidationError(self.error_messages['invalid'])
 
     def _clean_department_and_commune(self, commune_of_origin, current_year, department_of_origin, year_of_birth):
-        # Department number 98 is for Monaco
-        if department_of_origin == '98':
-            raise ValidationError(self.error_messages['invalid'])
-
         # Departments number 20, 2A and 2B represent Corsica
         if department_of_origin in ['20', '2A', '2B']:
             # For people born before 1976, Corsica number was 20
